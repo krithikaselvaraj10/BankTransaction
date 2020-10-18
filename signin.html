@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Registration form</title>
+<style>
+*{
+margin:0;
+padding:0;
+}
+body
+{
+background-image:url(https://novilabs.com/wp-content/uploads/2019/08/novi-labs-7-768x512.jpg);
+background-repeat:no-repeat;
+background-size:100% 950px;
+}
+h1
+{
+text-align:center;
+color:white;
+
+}
+.reg
+{
+max-width:600px;
+border-radius:5px;
+margin:auto;
+background:rgba(0,0,0,.6);
+box-sizing:border-box;
+padding:40px;
+color:white;
+margin-top:100px;
+}
+
+label
+{
+color:red:
+font-size:16px;
+font-family:sans-serif;
+font-style:italic;
+}
+::placeholder
+{
+color:white;
+
+}
+#name
+{
+width:250px;
+padding:5px;
+border:none;
+border-bottom:2px solid white;
+background:none;
+outline:0;
+color:white;
+}
+#code{
+padding:3px;
+border:none;
+background:none;
+color:white;
+border-bottom:2px solid white;
+}
+#mnum
+{
+padding:3px;
+border:none;
+background:none;
+outline:0;
+border-bottom:2px solid white;
+width:250px;
+color:white;
+}
+#male
+{
+color:white;
+font-size:18px;
+}
+#sub{
+width:100%;
+box-sizing:border-box;
+padding:10px 0;
+margin-top:30px;
+outline:none;
+border:none;
+background:white;
+color:black;
+}
+#wasp{
+font-weight:bolder;}
+</style>
+</head>
+<body>
+<div  class="reg">
+<h1>Account Registration Form</h1>
+<form id="reg" action="signin.php" method="post">
+<label>First Name</label><br>
+<input type="text" name="firstname" id="name" ><br><br>
+<label>Last Name</label><br>
+<input type="text" name="lastname" id="name" ><br><br>
+<label>Email</label><br>
+<input type="email" name="email" id="name"><br><br>
+<label>Password</label><br>
+<input type="password" name="password" id="name"><br><br>
+<label>Re-enter Password</label><br>
+<input type="password" name="cpassword" id="name" ><br><br>
+<label>Mobile Number</label><br>
+<input type="tel" name="phnno" id="mnum" ><br><br>
+<label>Date of birth</label><br>
+<input type="date" name="dob" id="name" ><br><br>
+<div class="form-group">
+<div id="wasp"><p>Gender</p></div>
+ <input type="radio" name="gender" value="male">
+ <label for="male">Male</label>
+ <input type="radio" name="gender" value="female">
+ <label for="female">Female</label>
+ <input type="radio" name="gender" value="other">
+ <label for="other">Other</label>
+</div>
+<input type="submit" id="sub" value="Register">
+</form>
+</div>
+</body>
+</html>
