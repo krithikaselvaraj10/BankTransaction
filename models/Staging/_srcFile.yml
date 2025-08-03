@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: Demo
+    database: snowflake_sample_data
+    schema: TPCDS_SF100TCL
+    tables:
+      - name: CALL_CENTER
+      - name: customer
